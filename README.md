@@ -1,1 +1,2 @@
 #Pengumuman Olimpiade
+This repository is a simple module of anouncement. The bussiness prosess is begin from the administrator input the name who pass the exam. And the index page of project will show who is pass the test
