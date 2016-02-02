@@ -8,9 +8,9 @@
 @stop
 @section('content')
 
- <div class="jumbotron custom-header">
+<div class="jumbotron custom-header">
   <div class="container">
-    <h1>PENGUMUMAN OLFAR 2016!</h1>
+    <h1>Selamat datang admin!</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis doloribus, veritatis corporis deleniti voluptas temporibus illum cumque voluptates, cupiditate beatae aperiam fugit est, esse. Esse quae voluptate ullam et, animi..</p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Beri Kami Feedback &raquo;</a></p>
   </div>
