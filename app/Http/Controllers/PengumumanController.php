@@ -44,7 +44,7 @@ class PengumumanController extends Controller {
 		$data = [
 			'peserta'	=> Finalist::all()
 		];
-		return view('contents.pengumuman.admin', $data);		
+		return view('contents.pengumuman.admin', $data);
 	}
 
 }

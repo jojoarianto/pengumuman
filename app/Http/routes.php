@@ -15,8 +15,11 @@ Route::get('/', ['as' => 'index', 'uses' => 'WelcomeController@index']);
 
 Route::get('home', 'HomeController@index');
 Route::get('pengumuman', 'PengumumanController@index');
-Route::get('admin', ['as' => 'page.admin', 'uses' => 'PengumumanController@getFinalist']);
 
+Route::group(['prefix' => 'admin'], function(){
+	get('/', ['as'=>'admin.getFinalist', 'uses'=>'PengumumanController@getFinalist']);
+	post('/', ['as'=>'admin.postFinalist', 'uses'=>'PengumumanController@postFinalist']);
+});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

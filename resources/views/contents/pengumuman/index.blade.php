@@ -26,17 +26,17 @@
 						<td>Asal Sekolah</td>
 					</tr>
 				</thead>
+				<tbody>
 				@if( isset( $peserta ) )
 				@foreach($peserta as $id => $value)
-				<tbody>
 					<tr>
 						<td>{{ $id }}</td>
 						<td>{{ $value->name }}</td>
 						<td>{{ $value->school_name }}</td>
 					</tr>
-				</tbody>
 				@endforeach
 				@endif
+				</tbody>
 			</table>
 		</div>
 	</div>

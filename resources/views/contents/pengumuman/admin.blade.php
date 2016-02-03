@@ -11,11 +11,21 @@
 <div class="jumbotron custom-header">
   <div class="container">
     <h1>Selamat datang admin!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis doloribus, veritatis corporis deleniti voluptas temporibus illum cumque voluptates, cupiditate beatae aperiam fugit est, esse. Esse quae voluptate ullam et, animi..</p>
+    <p>Silahkan menginput nama para finalis</p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Beri Kami Feedback &raquo;</a></p>
   </div>
 </div>
 <div class="container">
+	{!! Form::open(array('route' => 'admin.postFinalist')) !!}
+	<h3>Please input </h3>
+    {!! Form::label('name', 'Nama') !!}
+    {!! Form::text('name', null, array('placeholder' => 'nama sekolah')) !!}
+    {!! Form::label('name_school', 'Nama sekolah') !!}
+    {!! Form::text('name_school', null, array('placeholder' => 'nama sekolah')) !!}
+    {!! Form::submit('Click Me!') !!}
+	{!! Form::close() !!}
+	<hr>
+	<br>
 	<div class="row">
 		<div class="col-md-10">
 			<table id="tabel" class="table table-bordered table-hover">
@@ -24,19 +34,24 @@
 						<td width="5%">No</td>
 						<td>Nama</td>
 						<td>Asal Sekolah</td>
+						<td>Aksi</td>
 					</tr>
 				</thead>
+				<tbody>
 				@if( isset( $peserta ) )
 				@foreach($peserta as $id => $value)
-				<tbody>
 					<tr>
 						<td>{{ $id }}</td>
 						<td>{{ $value->name }}</td>
 						<td>{{ $value->school_name }}</td>
+						<td>
+							<a href="#" class="btn btn-default">Edit</a>
+							<a href="#" class="btn btn-danger">Delete</a>
+						</td>
 					</tr>
-				</tbody>
 				@endforeach
 				@endif
+				</tbody>
 			</table>
 		</div>
 	</div>

@@ -8,19 +8,21 @@
     <title>KOFEIN 2016 - @section('title') {{ $title or '' }} @show</title>
     <meta content="@section('title') {{ $title or '' }} KOFEIN 2016 - @show" property="og:title" />
     <meta content="KOFEIN 2016" property="og:site_name" />
+    <meta name="description" content="Olimpiade Farmasi Universitas Airlangga">
+    <link rel="shortcut icon" href="http://kofeinunair.com/images/ico/favicon.ico">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+
     @yield('head')
 
     <!-- custom css -->
     <style>
     body {
-      padding-top: 50px;
-      padding-bottom: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     .custom-header {
       background-color: #0e90d2;
@@ -39,7 +41,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar" style="margin-bottom:0">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
