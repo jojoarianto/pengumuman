@@ -33,7 +33,7 @@
 				@if( isset( $peserta ) )
 				@foreach($peserta as $id => $value)
 					<tr>
-						<td>{{ $id }}</td>
+						<td>{{ ($id + 1) }}</td>
 						<td>{{ $value->name }}</td>
 						<td>{{ $value->no_induk }}</td>
 						<td>{{ $value->school_name }}</td>
@@ -52,4 +52,9 @@
     } );
 </script>
 <div style="margin-bottom:100px"></div>
+<hr>
+<div class="text-center" style="margin-bottom:25px">
+	developed by <a href="http://haiunair.com">hai unair</a>
+</div>
+
 @endsection

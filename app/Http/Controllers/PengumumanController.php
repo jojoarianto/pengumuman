@@ -34,7 +34,7 @@ class PengumumanController extends Controller {
 	public function index()
 	{
 		$data = [
-			'peserta'	=> Finalist::all()
+			'peserta'	=> Finalist::orderBy('result', 'desc')->get()
 		];
 		return view('contents.pengumuman.index', $data);
 	}
