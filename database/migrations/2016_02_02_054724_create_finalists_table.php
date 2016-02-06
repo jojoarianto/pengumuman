@@ -17,6 +17,7 @@ class CreateFinalistsTable extends Migration {
 			$table->increments('id');
 			$table->integer('rank');
 			$table->string('name');
+			$table->string('no_induk');
 			$table->string('school_name');
 			$table->integer('result');
 			$table->timestamps();

@@ -1,0 +1,30 @@
+body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.custom-header {
+  background-color: #0e90d2;
+  color: #fff;
+}
+.custom-header .container > p {
+  color: #E4F2F7;
+}
+body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.custom-header {
+  background-color: #0e90d2;
+  color: #fff;
+  background: url("https://upload.wikimedia.org/wikipedia/id/0/01/Universitas_Airlangga_Surabaya.jpg");
+  background-position: 0 -280px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.custom-header .container > p {
+  color: #E4F2F7;
+}
+#span-header {
+  padding: 5px;
+  background-color: rgba(141, 192, 208, 0.67);
+}

@@ -20,17 +20,7 @@
 
     <!-- custom css -->
     <style>
-    body {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    .custom-header {
-      background-color: #0e90d2;
-      color: #fff;
-    }
-    .custom-header .container > p {
-      color: #E4F2F7;
-    }
+    
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
