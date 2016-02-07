@@ -14,9 +14,38 @@
   <div class="container">
     <h1><span id="span-header">PENGUMUMAN OLFAR 2016!</span></h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis doloribus, veritatis corporis deleniti voluptas temporibus illum cumque voluptates, cupiditate beatae aperiam fugit est, esse. Esse quae voluptate ullam et, animi..</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Beri Kami Feedback &raquo;</a></p>
+    <form action="" class="form form-inline" id="form_download">
+      <div class="form-group">
+        <select name="" id="select_region" class="form-control">
+          <!-- <option value="">-Select-</option> -->
+          <option value=1 >Surabaya </option>
+          <option value=2 >Sidoarjo </option>
+          <option value=3 >Gresik </option>
+          <option value=5 >Lamongan </option>
+          <option value=6 >Pasuruan </option>
+          <option value=7 >Malang </option>
+          <option value=8 >Madura </option>
+          <option value=9 >Jombang </option>
+          <option value=10 >Kediri</option>
+          <option value=11 >Blitiar </option>
+          <option value=12 >Tulungagung </option>
+          <option value=13 >Madiun </option>
+          <option value=14 >Banyuwangi </option>
+          <option value=15 >Bali </option>
+          <option value=16 >Yogyakarta </option>
+          <option value=17 >Bandung </option>
+          <option value=18 >Jakarta</option>
+          <option value=19 >Balikpapan </option>
+          <option value=20 >Mataram </option>
+        </select>
+        <button class="btn btn-info" onclick="downloadPerRegion()">Download Peringkat Per Region</button>
+      </div>
+    </form>
   </div>
 </div>
+
+
+
 
 <div class="jumbotron">
 	<div class="container">
@@ -26,7 +55,7 @@
 				<label for="no_induk">No induk</label>
 				<input type="text" class="form-control" id="no_induk" name="no_induk" placeholder="XX-XX-XX-XXXX">
 			</div>
-			<button type="submit" class="btn btn-default">Lihat Peringkat Anda</button>
+			<button type="submit" class="btn btn-default">Lihat Peringkat Nasional Anda</button>
 		</form>
 	</div>
 </div>
@@ -105,6 +134,17 @@
     $(document).ready(function() {
         $('#tabel').DataTable();
     } );
+
+    function downloadPerRegion(){
+      var val = $('#select_region').val();
+      if (val == 1) {
+        document.location.href='/surabaya.xls';
+      }
+    }
+
+    $('#form_download').submit(function(e){
+      e.preventDefault();
+    });
 
     $('#form_peringkat').submit(function(e){
     	e.preventDefault();
