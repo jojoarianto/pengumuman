@@ -28,3 +28,10 @@ body {
   padding: 5px;
   background-color: rgba(141, 192, 208, 0.67);
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .custom-header {
+        background-repeat: space;
+        background-position: 0;
+    }
+}

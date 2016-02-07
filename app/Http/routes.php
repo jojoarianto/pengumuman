@@ -2,6 +2,9 @@
 
 Route::get('home', ['as' => 'index', 'uses' => 'HomeController@index']);
 Route::get('/', 'PengumumanController@index');
+Route::post('/', 'PengumumanController@getRankByInduk');
+Route::get('/{induk}', 'PengumumanController@get');
+
 
 Route::group(['prefix' => 'admin'], function(){
 	get('/', ['as'=>'admin.getFinalist', 'uses'=>'PengumumanController@getFinalist']);
